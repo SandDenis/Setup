@@ -1,5 +1,5 @@
 <h1>Showing article details</h1>
-
+<%= link_to gravatar_for(@article.user), user_path(@article.user)%>
 <p><strong>Author:</strong> <%= @article.user.username%> </p>
 <p><strong>Title:</strong>  <%= @article.title %> </p>
 <p><strong>Description: </strong> <%= @article.description %> </p>
